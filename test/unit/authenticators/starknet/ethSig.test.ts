@@ -12,7 +12,7 @@ describe('ethSigAuthenticator', () => {
     const call = ethSigAuthenticator.createProposeCall(proposeEthSigEnvelope, {
       author: '0x0538D033B879aC94C709c1E408CC081345427379',
       executionStrategy: {
-        address: '0x04ecc83848a519cc22b0d0ffb70e65ec8dde85d3d13439eff7145d4063cf6b4d',
+        address: '0x089eF607e4F183e3097364854f68e449e94f961a',
         params: ['0x0']
       },
       strategiesParams: [],
@@ -38,7 +38,7 @@ describe('ethSigAuthenticator', () => {
         '0',
         '0'
       ],
-      contractAddress: '0x064cce9272197eba6353f5bbf060e097e516b411e66e83a9cf5910a08697df14',
+      contractAddress: '0x49345182D578B1b3c7Ed4B2e6eCD8Aef63DD2CA3',
       entrypoint: 'authenticate_propose'
     });
   });
