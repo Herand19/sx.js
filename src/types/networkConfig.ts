@@ -2,7 +2,9 @@ export type ExecutorType =
   | 'SimpleQuorumVanilla'
   | 'SimpleQuorumAvatar'
   | 'SimpleQuorumTimelock'
-  | 'EthRelayer';
+  | 'EthRelayer'
+  | 'Axiom'
+  | 'Isokratia';
 
 export type VanillaAuthenticatorConfig = {
   type: 'vanilla';
@@ -51,6 +53,13 @@ export type EvmSlotValueStrategyConfig = {
   };
 };
 
+export type OzVotesStorageProofStrategyConfig = {
+  type: 'ozVotesStorageProof';
+  params: {
+    deployedOnChain: string;
+  };
+};
+
 export type NetworkConfig = {
   eip712ChainId: string;
   spaceFactory: string;
@@ -74,6 +83,7 @@ export type NetworkConfig = {
       | Erc20VotesStrategyConfig
       | WhitelistStrategyConfig
       | EvmSlotValueStrategyConfig
+      | OzVotesStorageProofStrategyConfig
       | undefined;
   };
 };
